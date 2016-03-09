@@ -1,0 +1,28 @@
+{
+  "name": "webdev-tasks-3",
+  "version": "1.0.0",
+  "description": "В качестве задания к лекции про тестирование, после продолжительного мозгового штурма,\r ме решили предложить вам [написать тесты](https://yandex.ru/search/?lr=213&msid=20946.30320.1457006003.08429&text=%D0%BA%D0%B0%D0%BF%D0%B8%D1%82%D0%B0%D0%BD%20%D0%BE%D1%87%D0%B5%D0%B2%D0%B8%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%8C\r ) на одну из задач из первого семестра.",
+  "main": "task9.js",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "sinon": "^1.17.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jscs": "^2.11.0",
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vedmax/webdev-tasks-3.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vedmax/webdev-tasks-3/issues"
+  },
+  "homepage": "https://github.com/Vedmax/webdev-tasks-3#readme"
+}
