@@ -131,7 +131,7 @@ describe('Flow module', () => {
             flow.parallel([func1, func2], callback);
         });
 
-        it('should take errors', () => {
+        it('should take errors in callback', () => {
             var func1 = next => {
                 next('error!', 0)
             };
@@ -144,7 +144,7 @@ describe('Flow module', () => {
             assert(callback.calledWith('error!'));
         });
 
-        it('should run callback after error', () => {
+        it('should not run all callbacks after error', () => {
             var func1 = next => {
                 next('error!', 1)
             };
