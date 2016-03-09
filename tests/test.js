@@ -140,6 +140,7 @@ describe('Flow module', () => {
             });
             var callback = sinon.spy((error, data) => {});
             flow.parallel([func1, func2], callback);
+
             assert(callback.calledWith('error!'));
         });
 
@@ -161,6 +162,7 @@ describe('Flow module', () => {
         it('should not fail without values', () => {
             var callback = sinon.spy((error, data) => {});
             flow.map([], (next) => {}, callback);
+
             assert(callback.calledWithExactly(null, []));
         });
 
@@ -170,6 +172,7 @@ describe('Flow module', () => {
             };
             var callback = sinon.spy((error, data) => {});
             flow.map([1, 2, 3], func, callback);
+
             assert(callback.calledWithExactly(null, [2, 3, 4]));
         });
     });
